@@ -2,3 +2,20 @@
 DOMAIN,new.sharedchat.cc
 DOMAIN-KEYWORD,bing.com
 DOMAIN-KEYWORD,zjyyy.top
+
+# 抖音白名单 2026-11-26：抖音视频被去广告规则误杀（fmz200 合集的 video-cn.snssdk.com、p3.pstatp.com、tos.pstatp.com，以及 Cats-Team 分流里的 snssdk/pstatp 子域名）
+# 用法：QX [filter_remote] 里引用本文件，force-policy=direct，并放在广告分流（Cats-Team）前面
+# 注意：这只能放行分流层；重写层的拦截还需用解析器 replace 删掉 fmz200 那三行（见 QX 配置 v9）
+DOMAIN-SUFFIX,douyin.com
+DOMAIN-SUFFIX,douyinvod.com
+DOMAIN-SUFFIX,douyinpic.com
+DOMAIN-SUFFIX,douyinstatic.com
+DOMAIN-SUFFIX,snssdk.com
+DOMAIN-SUFFIX,isnssdk.com
+DOMAIN-SUFFIX,pstatp.com
+DOMAIN-SUFFIX,amemv.com
+DOMAIN-SUFFIX,ixigua.com
+DOMAIN-SUFFIX,bytedance.com
+DOMAIN-SUFFIX,byteimg.com
+DOMAIN-SUFFIX,tiktokv.com
+DOMAIN-SUFFIX,toutiao.com
