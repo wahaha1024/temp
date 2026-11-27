@@ -6,6 +6,7 @@ DOMAIN-KEYWORD,zjyyy.top
 # 抖音白名单 2026-11-26：抖音视频被去广告规则误杀（fmz200 合集的 video-cn.snssdk.com、p3.pstatp.com、tos.pstatp.com，以及 Cats-Team 分流里的 snssdk/pstatp 子域名）
 # 用法：QX [filter_remote] 里引用本文件，force-policy=direct，并放在广告分流（Cats-Team）前面
 # 注意：这只能放行分流层；重写层的拦截还需用解析器 replace 删掉 fmz200 那三行（见 QX 配置 v9）
+# 2026-11-27 追加：vcs.zijieapi.com、polaris.zijieapi.com 在抖音播放时被 Cats-Team 分流拦截（DNS 阻止列表实测），主视频已恢复、抖音精选仍放不了，先放行 zijieapi.com 再测
 DOMAIN-SUFFIX,douyin.com
 DOMAIN-SUFFIX,douyinvod.com
 DOMAIN-SUFFIX,douyinpic.com
@@ -19,3 +20,4 @@ DOMAIN-SUFFIX,bytedance.com
 DOMAIN-SUFFIX,byteimg.com
 DOMAIN-SUFFIX,tiktokv.com
 DOMAIN-SUFFIX,toutiao.com
+DOMAIN-SUFFIX,zijieapi.com
