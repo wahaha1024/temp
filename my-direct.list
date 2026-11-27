@@ -7,6 +7,7 @@ DOMAIN-KEYWORD,zjyyy.top
 # 用法：QX [filter_remote] 里引用本文件，force-policy=direct，并放在广告分流（Cats-Team）前面
 # 注意：这只能放行分流层；重写层的拦截还需用解析器 replace 删掉 fmz200 那三行（见 QX 配置 v9）
 # 2026-11-27 追加：vcs.zijieapi.com、polaris.zijieapi.com 在抖音播放时被 Cats-Team 分流拦截（DNS 阻止列表实测），主视频已恢复、抖音精选仍放不了，先放行 zijieapi.com 再测
+# 2026-11-27 20:38 再追加：抖音精选 APP 播视频那一秒，唯一被拦的字节域名是 dig.bdurl.net（fmz200 与 Cats-Team 两层都拦，须配合 replace 删 fmz200 那两行）和 dig.zjurl.cn（只有 Cats-Team 拦）
 DOMAIN-SUFFIX,douyin.com
 DOMAIN-SUFFIX,douyinvod.com
 DOMAIN-SUFFIX,douyinpic.com
@@ -21,3 +22,5 @@ DOMAIN-SUFFIX,byteimg.com
 DOMAIN-SUFFIX,tiktokv.com
 DOMAIN-SUFFIX,toutiao.com
 DOMAIN-SUFFIX,zijieapi.com
+DOMAIN-SUFFIX,zjurl.cn
+DOMAIN-SUFFIX,bdurl.net
